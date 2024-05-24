@@ -1,0 +1,96 @@
+.root {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.pizzaBlock {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.nameBlock {
+    height: 100px;
+    @media (max-width: 768px) {
+        height: 200px;
+    }
+}
+
+.leftHalf {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+    .nameBlock {
+        text-align: end;
+    }
+}
+
+.rightHalf {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.imgBlockLeft {
+    position: relative;
+    display: flex;
+    width: 295px;
+    overflow: hidden;
+    .arrowLeftUp {
+        position: absolute;
+        top: 0;
+        left: 70%;
+        cursor: pointer;
+    }
+    .arrowLeftDown {
+        position: absolute;
+        bottom: 0;
+        left: 70%;
+        cursor: pointer;
+    }
+}
+
+.imgBlockRight {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 295px;
+    overflow: hidden;
+    .arrowRightUp {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        cursor: pointer;
+    }
+    .arrowRightDown {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        cursor: pointer;
+    }
+}
+
+.addBtn {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}

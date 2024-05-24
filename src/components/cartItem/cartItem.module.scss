@@ -1,0 +1,30 @@
+.item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    &:after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: rgb(211, 211, 211);
+    }
+    .count {
+        display: flex;
+        gap: 10px;
+    }
+    .price {
+        display: flex;
+        gap: 10px;
+    }
+    .icon {
+        cursor: pointer;
+        transition: 0.15s all ease-in-out;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}
